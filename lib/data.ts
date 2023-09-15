@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import ssjiep from "@/Public/ssjip.jpg";
-import ssbaim from "@/Public/ssbaim1.png";
-import sspos from "@/Public/sspos.png";
+import ssjiep from "@/public/ssjip.jpg";
+import ssbaim from "@/public/ssbaim1.png";
+import sspos from "@/public/sspos.png";
 
 export const links = [
   {
