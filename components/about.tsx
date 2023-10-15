@@ -19,7 +19,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        completing my <span className="font-medium">mechanical</span>{" "}
+        After completing my <span className="font-medium">mechanical</span>{" "}
         degree, I found myself at a crossroads. While I had a formal education
         in mechanical engineering, I realized that my true passion lay in the
         world of programming and software development. Determined to turn my
