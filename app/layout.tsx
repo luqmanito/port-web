@@ -6,8 +6,10 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
+// const router = useRouter();
 
 export const metadata = {
   title: "Luqman | Personal Portfolio",
@@ -29,7 +31,7 @@ export default function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Header />
+            {/* <Header /> */}
             {children}
             <Footer />
 

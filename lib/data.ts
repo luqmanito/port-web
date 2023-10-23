@@ -3,8 +3,13 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import ssjiep from "@/public/ssjip.jpg";
+import ssmainjiep from "@/public/ssmainjiep.png";
 import ssbaim from "@/public/ssbaim1.png";
+import baimMenu from "@/public/menu-baim.jpeg";
 import sspos from "@/public/sspos.png";
+import ssposapp from "@/public/supala-pos.jpg";
+import baimkumis from "@/public/baimkumis.jpg";
+import ssposweb from "@/public/ssposweb.png";
 
 export const links = [
   {
@@ -30,6 +35,61 @@ export const links = [
   {
     name: "Contact",
     hash: "#contact",
+  },
+] as const;
+
+export const navMenu = [
+  {
+    name: "Project",
+    hash: "#project",
+    url: "/project",
+  },
+  {
+    name: "Blog",
+    hash: "#blog",
+    url: "/blog",
+  },
+  {
+    name: "Contact",
+    hash: "#contact",
+    url: "mailto:luqmangrahito@gmail.com",
+  },
+] as const;
+
+export const projectMenu = [
+  {
+    name: "Website",
+    value: "web",
+  },
+  {
+    name: "Mobile App",
+    value: "app",
+  },
+  {
+    name: "Portfolio",
+    value: "portfolio",
+  },
+] as const;
+
+export const webList = [
+  {
+    name: "E-Sim Records",
+    imageUrl: ssmainjiep,
+  },
+  {
+    name: "Pos",
+    imageUrl: ssposweb,
+  },
+] as const;
+
+export const appList = [
+  {
+    name: "Pos Mobile",
+    imageUrl: ssposapp,
+  },
+  {
+    name: "Baim Kumis",
+    imageUrl: baimkumis,
   },
 ] as const;
 
