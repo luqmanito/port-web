@@ -39,7 +39,6 @@ export default function Intro() {
               quality="95"
               priority={true}
               className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl hover:scale-105 transition-transform"
-              // className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 

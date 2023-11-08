@@ -1,16 +1,23 @@
 "use client";
 
 import Navbar from "@/components/navbar";
-import { webList, projectMenu, appList } from "@/lib/data";
+import { webList, projectMenu, appList, portfolioList } from "@/lib/data";
 import clsx from "clsx";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { BsArrowRight, BsBook } from "react-icons/bs";
 import { FaBook, FaLink } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 export default function ProjectPage() {
   const [active, setActive] = useState("web");
-  const activeList = active === "web" ? webList : appList;
+  const router = useRouter();
+  const activeList =
+    active === "web"
+      ? webList
+      : active === "portfolio"
+      ? portfolioList
+      : appList;
 
   return (
     <section>
@@ -48,29 +55,39 @@ export default function ProjectPage() {
         >
           {activeList.map((item, index) => {
             return (
-              // <div className={index % 2 === 0 ? "mb-4 pr-2" : "mb-4 pl-2"}>
               <motion.div
                 key={item.name}
-                initial={{ x: -50, opacity: 0 }} // Start from the left and be initially invisible
-                animate={{ x: 0, opacity: 1 }} // Move to the center and become visible
+                initial={{ x: -50, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 260, damping: 20 }}
                 className={index % 2 === 0 ? "mb-4 pr-2" : "mb-4 pl-2"}
               >
                 <Image
+                  onClick={() => router.push(`/project/${item.url}`)}
                   className=" hover:brightness-90 hover:ease-in duration-200 hover:cursor-pointer"
                   src={item.imageUrl}
                   alt="E-Sim Records"
-                  quality={95}
+                  quality={100}
                 />
                 <div>
-                  <h1 className="text-xl mt-4">{item.name}</h1>
+                  <h1
+                    onClick={() => router.push(`/project/${item.url}`)}
+                    className="text-xl mt-4 hover:cursor-pointer  w-fit"
+                  >
+                    {item.name}
+                  </h1>
                   <div className="flex flex-row gap-8 mt-2">
                     <div
                       onClick={() => {}}
                       className=" w-fit flex flex-row  hover:cursor-pointer"
                     >
                       <FaBook className="self-center" />
-                      <h1 className="pl-2">Read more</h1>
+                      <h1
+                        onClick={() => router.push(`/project/${item.url}`)}
+                        className="pl-2"
+                      >
+                        Read more
+                      </h1>
                     </div>
                     <div
                       onClick={() => {}}
@@ -81,7 +98,6 @@ export default function ProjectPage() {
                     </div>
                   </div>
                 </div>
-                {/* </div> */}
               </motion.div>
             );
           })}
