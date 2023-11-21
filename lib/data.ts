@@ -18,6 +18,9 @@ import ssezpos5 from "@/public/ssezpos4.png";
 import ssezpos6 from "@/public/ssezpos5.png";
 import ssezpos7 from "@/public/ssezpos6.png";
 import ssezpos8 from "@/public/ssezpos7.png";
+import ssbaim1 from "@/public/ssbaim-1.png";
+import ssbaim2 from "@/public/ssbaim-2.png";
+import ssbaim3 from "@/public/ssbaim-3.png";
 import sspayment from "@/public/sspayment.png";
 import ssproducts from "@/public/ssproducts.png";
 import ssbusiness from "@/public/ssbusiness.png";
@@ -28,7 +31,25 @@ import ssbaim from "@/public/ssbaim1.png";
 import sspos from "@/public/sspos.png";
 import ssposapp from "@/public/supala-pos.png";
 import sscoffee1 from "@/public/coffee-web.png";
+import sscoffee2 from "@/public/co1.jpg";
+import sscoffee3 from "@/public/col2.jpg";
+import ssmarlion from "@/public/ssmarlion.png";
+import sscoffee4 from "@/public/co3.jpg";
+import sscoffee5 from "@/public/col4.jpg";
+import ssfazz1 from "@/public/sasd.jpg";
+import ssfazz2 from "@/public/sasd2.jpg";
+import ssfazz3 from "@/public/sasd3.jpg";
+import ssfazz4 from "@/public/profilefazz.jpg";
+import spektrum from "@/public/spectrum.jpg";
+import spektrum1 from "@/public/spectrum2.jpg";
+import spektrum2 from "@/public/spectrum3.jpg";
+import spektrum3 from "@/public/spectrum4.jpg";
+import spektrum4 from "@/public/spectrum5.jpg";
+import mcoffee from "@/public/mobile-coffee.png";
+import mcoffee1 from "@/public/mobile-coffee2.png";
 import ssxazam from "@/public/xazam-web.png";
+import ssxazam2 from "@/public/movie2.jpg";
+import ssxazam3 from "@/public/movie3.jpg";
 import sscoffeeapp from "@/public/coffee-apps.png";
 import sssgp from "@/public/sgp-web.png";
 import ssspectrum from "@/public/spectrum-web.png";
@@ -120,7 +141,7 @@ export const webList = [
     name: "E-Sim Records",
     imageUrl: ssmainjiep,
     images: [ssjiep10, ssjiep1, ssjiep2, ssjiep3, ssjiep6, ssjiep9],
-    link: "https://github.com/luqmanito/esim-record",
+    link: "https://recordcenter.jiep.co.id/",
     url: "e-sim-pos",
     css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
     techstack:
@@ -155,7 +176,7 @@ export const webList = [
       ssproducts,
       sspayment,
     ],
-    link: "https://github.com/luqmanito/esim-record",
+    link: "https://ezpos.partograf-digital.com/order/ito-mart",
     css: "Vuetify",
     techstack:
       "The site is still under development; it is built by Vue.js 3.3.4 with typescript and uses the Pinia state management pattern, Axios for handling API requests, and runs on the Vite library. In addition to frontend work, I also assist in building or designing the database schema and implementing it in backend work using the PHP framework Laravel and Eloquent ORM",
@@ -196,10 +217,10 @@ export const appList = [
       ssezpos7,
       ssezpos8,
     ],
-    link: "https://github.com/luqmanito/esim-record",
+    link: "https://github.com/luqmanito/m-pos",
     css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
     techstack:
-      "This mobile app is built using Typescript and React Native with Firebase integration to send push notifications to employees. Redux Toolkit is utilized to handle global state management in this app. As for the user interface, I chose NativeBase to streamline the development process. I've made an effort to implement clean code architecture in this project, making the code much easier to read and scalable. You can check my repository to see it.",
+      "This mobile app is built using Typescript and React Native with Firebase integration to send push notifications to employees. Redux Toolkit is utilized to handle global state management in this app. As for the user interface, I chose NativeBase to streamline the development process. I've made an effort to implement clean code architecture in this project, making the code much easier to read and scalable. You can check my repository to see it. This app is currently in development, and the current progress is in the internal testing phase on Google Console. If you would like to be part of our testing team, please contact me, and I'll send you the download link.",
     description:
       "EzPos is a POS mobile app currently designed for Android, primarily used in tab view, but it can also run on the normal mobile Android view. Essentially, it's a food SAAS app where a business owner can register their business. After registration, they can proceed to create a list of their food products. The business owner has the ability to manage their employees by adding and editing their roles, such as kitchen staff, regular users, administrators, and cashiers. Each role comes with different feature authorities within the app.",
     brief: [
@@ -227,25 +248,20 @@ export const appList = [
     name: "Baim Kumis",
     imageUrl: baimkumis,
     url: "baim-kumis-app",
-    images: [baimkumis, ssjiep1, ssjiep2, ssjiep3, ssjiep6, ssjiep9],
-    link: "https://github.com/luqmanito/esim-record",
+    images: [baimkumis, ssbaim1, ssbaim2, ssbaim3],
+    link: "https://github.com/luqmanito/baim-kumis-mobile",
     css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
     techstack:
-      "The site is build by Vue.js 2.7 and using vuex state management pattern + library, some other library that used is apexchart for displaying chart in dashboard page, then firebase integrated to manage push notification, axios for handling API request. this site runing in vite library with docker deployment",
-    description:
-      "E-Sim Records is a web that made for user store their item in a client warehouse, all warehouse acitivities are recorded within app, some activities like user request, withdrawal item, item lending, returning item, digitalization, destroying item, all the process time and status, and location are recorded within app, there also several roles who have several authority, and make change status of that item",
+      "The app is developed using React Native with NativeBase for the UI/UX, and for seamless state management, I have implemented Redux Toolkit within the application.",
+    description: `"Baim Kumis" is an abbreviation of "Bantosan Imah Keur Urang Ciamis." It is an application designed to monitor slum areas and track the history of updates within them. The government utilizes this app to monitor communities eligible for assistance and determine individuals in need of housing repairs. For instance, if a household's toilet is deemed unfeasible, the government initiates the necessary repairs, and all activities, both before and after each intervention, are documented within the app.`,
     brief: [
       {
         brief_1:
-          "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
+          "Here is an example view of the dashboard, featuring an overall list of detailed total slum areas and a list of proposals indicating people with inadequate housing facilities.",
         brief_2:
-          "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
+          "In this picture, you can observe a display for the user profile that is logged into the app. Additionally, there are details presented before and after house fixing, along with a filtering option for regions.",
         brief_3:
-          "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
-        brief_4:
-          "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
-        brief_5:
-          "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
+          "In this last picture, there is information to add proposals and its corresponding details screen.",
       },
     ],
   },
@@ -256,25 +272,24 @@ export const portfolioList = [
     name: "Coffee Shop",
     imageUrl: sscoffee1,
     url: "coffee-shop",
-    images: [ssjiep10, ssjiep1, ssjiep2, ssjiep3, ssjiep6, ssjiep9],
-    link: "https://github.com/luqmanito/esim-record",
+    images: [sscoffee1, sscoffee2, sscoffee3, sscoffee4, sscoffee5],
+    link: "https://haya-coffee-frontend.vercel.app/",
     css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
-    techstack:
-      "The site is build by Vue.js 2.7 and using vuex state management pattern + library, some other library that used is apexchart for displaying chart in dashboard page, then firebase integrated to manage push notification, axios for handling API request. this site runing in vite library with docker deployment",
+    techstack: "Stack used : PostgreSQL, Express, React, Node",
     description:
-      "E-Sim Records is a web that made for user store their item in a client warehouse, all warehouse acitivities are recorded within app, some activities like user request, withdrawal item, item lending, returning item, digitalization, destroying item, all the process time and status, and location are recorded within app, there also several roles who have several authority, and make change status of that item",
+      "I developed a CRUD site for buying and selling coffee and food, with a useful feature for buyers and a separate interface for sellers. Users can register, create an account, and log in to browse and select items, add them to their cart, and checkout. In addition to the buying and selling features, the site also includes a user prowle and a product order history. On the admin side, the site allows the addition of new items, price editing, and promotional offers",
     brief: [
       {
-        brief_1:
-          "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
-        brief_2:
-          "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
-        brief_3:
-          "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
-        brief_4:
-          "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
-        brief_5:
-          "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
+        // brief_1:
+        //   "Dashboard Page",
+        // brief_2:
+        //   "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
+        // brief_3:
+        //   "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
+        // brief_4:
+        //   "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
+        // brief_5:
+        //   "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
       },
     ],
   },
@@ -282,25 +297,24 @@ export const portfolioList = [
     name: "Coffee Shop Mobile App",
     imageUrl: sscoffeeapp,
     url: "coffee-shop-app",
-    images: [ssjiep10, ssjiep1, ssjiep2, ssjiep3, ssjiep6, ssjiep9],
-    link: "https://github.com/luqmanito/esim-record",
+    images: [sscoffeeapp, mcoffee, mcoffee1],
+    link: "https://github.com/luqmanito/HayaShop",
     css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
-    techstack:
-      "The site is build by Vue.js 2.7 and using vuex state management pattern + library, some other library that used is apexchart for displaying chart in dashboard page, then firebase integrated to manage push notification, axios for handling API request. this site runing in vite library with docker deployment",
+    techstack: "Stack used : PostgreSQL, Express, React Native, Node.js",
     description:
-      "E-Sim Records is a web that made for user store their item in a client warehouse, all warehouse acitivities are recorded within app, some activities like user request, withdrawal item, item lending, returning item, digitalization, destroying item, all the process time and status, and location are recorded within app, there also several roles who have several authority, and make change status of that item",
+      "I developed an Android-based mobile application for buying and selling food and drinks. Users can register and log in with their email, and then browse and order products based on best-selling, cheapest, newest, or most expensive. In addition to the ordering feature, the app also includes an edit user prowle feature. On the admin side, there is a feature for adding and editing food and beverage products, including descriptions, prices, and images, which are then displayed to users as buyers.",
     brief: [
       {
-        brief_1:
-          "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
-        brief_2:
-          "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
-        brief_3:
-          "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
-        brief_4:
-          "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
-        brief_5:
-          "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
+        // brief_1:
+        //   "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
+        // brief_2:
+        //   "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
+        // brief_3:
+        //   "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
+        // brief_4:
+        //   "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
+        // brief_5:
+        //   "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
       },
     ],
   },
@@ -308,25 +322,24 @@ export const portfolioList = [
     name: "FazzPay",
     imageUrl: ssfazzpay,
     url: "fazzpay",
-    images: [ssjiep10, ssjiep1, ssjiep2, ssjiep3, ssjiep6, ssjiep9],
-    link: "https://github.com/luqmanito/esim-record",
+    images: [ssfazzpay, ssfazz1, ssfazz2, ssfazz3, ssfazz4],
+    link: "https://fazzpay-six.vercel.app/",
     css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
-    techstack:
-      "The site is build by Vue.js 2.7 and using vuex state management pattern + library, some other library that used is apexchart for displaying chart in dashboard page, then firebase integrated to manage push notification, axios for handling API request. this site runing in vite library with docker deployment",
+    techstack: "Stack used : PostgreSQL, Express, Next, Node",
     description:
-      "E-Sim Records is a web that made for user store their item in a client warehouse, all warehouse acitivities are recorded within app, some activities like user request, withdrawal item, item lending, returning item, digitalization, destroying item, all the process time and status, and location are recorded within app, there also several roles who have several authority, and make change status of that item",
+      "I developed a CRUD site for e-wallets, integrating a payment gateway through Midtrans. Users can log in to access top-up and transfer features, along with viewing their transaction history. Besides these main features, the site also incorporates a user profile viewing and editing feature.",
     brief: [
       {
-        brief_1:
-          "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
-        brief_2:
-          "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
-        brief_3:
-          "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
-        brief_4:
-          "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
-        brief_5:
-          "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
+        // brief_1:
+        //   "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
+        // brief_2:
+        //   "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
+        // brief_3:
+        //   "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
+        // brief_4:
+        //   "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
+        // brief_5:
+        //   "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
       },
     ],
   },
@@ -334,25 +347,24 @@ export const portfolioList = [
     name: "Spectrum Furniture",
     imageUrl: ssspectrum,
     url: "spectrum",
-    images: [ssjiep10, ssjiep1, ssjiep2, ssjiep3, ssjiep6, ssjiep9],
-    link: "https://github.com/luqmanito/esim-record",
+    images: [ssspectrum, spektrum, spektrum1, spektrum2, spektrum3, spektrum4],
+    link: "https://spectrum-online.vercel.app/",
     css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
-    techstack:
-      "The site is build by Vue.js 2.7 and using vuex state management pattern + library, some other library that used is apexchart for displaying chart in dashboard page, then firebase integrated to manage push notification, axios for handling API request. this site runing in vite library with docker deployment",
+    techstack: "Stack used : PostgreSQL, Express, React, Node.js",
     description:
-      "E-Sim Records is a web that made for user store their item in a client warehouse, all warehouse acitivities are recorded within app, some activities like user request, withdrawal item, item lending, returning item, digitalization, destroying item, all the process time and status, and location are recorded within app, there also several roles who have several authority, and make change status of that item",
+      "I was a Backend Developer on a team that developed a CRUD site for buying furniture. The main features of the site include viewing a list of items displayed on the product menu, with the ability to sort items by category, price, color, and brand. In addition to the main features, the site also includes user prowles and admin features for adding, deleting, and editing products for sale",
     brief: [
       {
-        brief_1:
-          "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
-        brief_2:
-          "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
-        brief_3:
-          "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
-        brief_4:
-          "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
-        brief_5:
-          "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
+        // brief_1:
+        //   "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
+        // brief_2:
+        //   "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
+        // brief_3:
+        //   "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
+        // brief_4:
+        //   "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
+        // brief_5:
+        //   "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
       },
     ],
   },
@@ -360,25 +372,24 @@ export const portfolioList = [
     name: "Xazam Movie",
     imageUrl: ssxazam,
     url: "xazam",
-    images: [ssjiep10, ssjiep1, ssjiep2, ssjiep3, ssjiep6, ssjiep9],
-    link: "https://github.com/luqmanito/esim-record",
+    images: [ssxazam, ssxazam2, ssxazam3],
+    link: "https://xazamtickitz.vercel.app",
     css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
-    techstack:
-      "The site is build by Vue.js 2.7 and using vuex state management pattern + library, some other library that used is apexchart for displaying chart in dashboard page, then firebase integrated to manage push notification, axios for handling API request. this site runing in vite library with docker deployment",
+    techstack: "Stack used : PostgreSQL, Express, Next, Node.js",
     description:
-      "E-Sim Records is a web that made for user store their item in a client warehouse, all warehouse acitivities are recorded within app, some activities like user request, withdrawal item, item lending, returning item, digitalization, destroying item, all the process time and status, and location are recorded within app, there also several roles who have several authority, and make change status of that item",
+      "I worked as a Frontend Developer on a team that developed a CRUD site for ordering cinema tickets. The main features of the site include viewing current and upcoming movies, selecting movies and cinema seats, and making payments. Once the payment is completed, users can print their cinema tickets. In addition to these main features, the site includes an admin feature for adding new movies, updating the screening schedule, and specifying the city for each screening location.",
     brief: [
       {
-        brief_1:
-          "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
-        brief_2:
-          "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
-        brief_3:
-          "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
-        brief_4:
-          "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
-        brief_5:
-          "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
+        // brief_1:
+        //   "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
+        // brief_2:
+        //   "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
+        // brief_3:
+        //   "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
+        // brief_4:
+        //   "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
+        // brief_5:
+        //   "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
       },
     ],
   },
@@ -386,25 +397,25 @@ export const portfolioList = [
     name: "Singapore Holiday Guide",
     imageUrl: sssgp,
     url: "sgp-holiday-map",
-    images: [ssjiep10, ssjiep1, ssjiep2, ssjiep3, ssjiep6, ssjiep9],
-    link: "https://github.com/luqmanito/esim-record",
+    images: [sssgp, ssmarlion],
+    link: "https://holidaymap-sgp-googlemap.vercel.app/",
     css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
     techstack:
-      "The site is build by Vue.js 2.7 and using vuex state management pattern + library, some other library that used is apexchart for displaying chart in dashboard page, then firebase integrated to manage push notification, axios for handling API request. this site runing in vite library with docker deployment",
+      "Tech Stack : Next.js, Redux, Googlemap Api",
     description:
-      "E-Sim Records is a web that made for user store their item in a client warehouse, all warehouse acitivities are recorded within app, some activities like user request, withdrawal item, item lending, returning item, digitalization, destroying item, all the process time and status, and location are recorded within app, there also several roles who have several authority, and make change status of that item",
+      "I successfully integrated the Google Maps API for my top-rated tourist map in Singapore. It's a simple website where users can click on one of the places, and the map next to it will display the location marked with a red marker, along with a full description of the place.",
     brief: [
       {
-        brief_1:
-          "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
-        brief_2:
-          "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
-        brief_3:
-          "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
-        brief_4:
-          "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
-        brief_5:
-          "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
+        // brief_1:
+        //   "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
+        // brief_2:
+        //   "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
+        // brief_3:
+        //   "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
+        // brief_4:
+        //   "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
+        // brief_5:
+        //   "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
       },
     ],
   },
@@ -460,7 +471,7 @@ export const projectsData = [
       "I developed an application that enables users to store their goods in a warehouse. All warehouse activities and user requests for storing goods are recorded within the application.",
     tags: ["Vue.js", "PostgreDb", "Bootstrap", "Mat UI Vuexy"],
     imageUrl: ssjiep,
-    url: "/project/e-sim-pos"
+    url: "/project/e-sim-pos",
   },
   {
     title: "Baim Kumis",
@@ -468,7 +479,7 @@ export const projectsData = [
       "I developed an app that serves as a comprehensive solution for house repairment tracking and improvement proposals. Users can seamlessly monitor house data, identify repair needs, evaluate slum areas, etc.",
     tags: ["React Native", "Native Base", "Redux"],
     imageUrl: ssbaim,
-    url: "/project/baim-kumis-app"
+    url: "/project/baim-kumis-app",
   },
   {
     title: "Pos-mobile",
@@ -484,7 +495,7 @@ export const projectsData = [
       "Eloquent",
     ],
     imageUrl: sspos,
-    url: "/project/ezpos-app"
+    url: "/project/ezpos-app",
   },
 ] as const;
 

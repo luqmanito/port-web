@@ -7,7 +7,6 @@ import { useParams } from "next/navigation";
 
 export default function DetailProjectPage() {
   const params = useParams();
-  const [active, setActive] = useState<string>("web");
   const [project, setProject] = useState<ItemProject | null>(null);
 
   const findItemInList = (lists: ItemProject[][], id: string) => {
@@ -26,50 +25,42 @@ export default function DetailProjectPage() {
   }, [params.id]);
 
   return (
-    <section className="px-64 pb-20">
-      <article className="px-36">
-        <h1 className="flex text-4xl font-bold justify-center">
+    <section className="px-4 md:px-8 lg:px-16 xl:px-32 pb-20">
+      <article className="md:px-16 lg:px-32">
+        <h1 className="flex text-2xl md:text-4xl font-bold justify-center">
           {project?.name}
         </h1>
-        <div className=" flex mt-8 justify-center  ">
+        <div className="flex mt-4 md:mt-8 justify-center">
           <Image
             src={project?.images ? project.images[0] : ""}
             loading="lazy"
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-            alt="Picture of the author"
+            className="w-full md:w-auto"
+            alt="Project Image"
           />
         </div>
-        <h1 className=" flex text-3xl font-bold mt-4 hover:cursor-pointer  w-fit">
+        <h1 className="flex text-xl md:text-3xl font-bold mt-4 md:mt-8  w-fit">
           Introduction
         </h1>
-        <p className="text-lg mt-4">{project?.description}</p>
-        <p className="text-lg mt-10">{project?.techstack}</p>
-        <h1 className=" flex text-3xl font-bold mt-16 hover:cursor-pointer  w-fit">
+        <p className="text-base md:text-lg mt-4">{project?.description}</p>
+        <p className="text-base md:text-lg mt-8">{project?.techstack}</p>
+        <h1 className="flex text-xl md:text-3xl font-bold mt-8 md:mt-16  w-fit">
           Short Feature Explanation
         </h1>
-        {project?.images.slice(1).map((image, index) => {
-          return (
-            <React.Fragment key={index}>
-              <div className=" flex mt-8 justify-center  ">
-                <Image
-                  loading="lazy"
-                  src={image}
-                  alt={`Image ${index + 1}`}
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-              <p className="text-lg mt-10">
-                {project.brief[0][`brief_${index + 1}`]}
-              </p>
-            </React.Fragment>
-          );
-        })}
+        {project?.images.slice(1).map((image, index) => (
+          <React.Fragment key={index}>
+            <div className="flex mt-4 md:mt-8 justify-center">
+              <Image
+                loading="lazy"
+                src={image}
+                alt={`Image ${index + 1}`}
+                className="w-full md:w-auto"
+              />
+            </div>
+            <p className="text-base md:text-lg mt-4">
+              {project.brief[0][`brief_${index + 1}`]}
+            </p>
+          </React.Fragment>
+        ))}
       </article>
     </section>
   );

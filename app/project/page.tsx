@@ -6,7 +6,6 @@ import clsx from "clsx";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { BsArrowRight, BsBook } from "react-icons/bs";
 import { FaBook, FaLink } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 export default function ProjectPage() {
@@ -22,15 +21,15 @@ export default function ProjectPage() {
   return (
     <section>
       <Navbar />
-      <div className="px-40">
+      <div className="px-4 sm:px-8 md:px-16 lg:px-40 ">
         <h1 className="text-4xl font-bold ">Projects</h1>
-        <div className="flex flex-row mt-16 h-16 justify-between w-2/5 ">
+        <div className="flex flex-row mt-16 h-16 justify-between sm:w-2/3 md:w-1/2 lg:w-2/5 ">
           {projectMenu.map((item) => {
             return (
               <div
                 key={item.name}
                 className={clsx(
-                  "font-medium text-2xl self-center hover:cursor-pointer",
+                  "font-medium text-lg sm:text-xl md:text-2xl lg:text-2xl mb-2 sm:mb-0 hover:cursor-pointer",
                   {
                     "underline underline-offset-8": active === item.value,
                   }
@@ -51,7 +50,7 @@ export default function ProjectPage() {
             type: "tween",
             duration: 0.2,
           }}
-          className="mt-8 grid lg:grid-cols-2 sm:grid-cols-2 gap-4"
+          className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4"
         >
           {activeList.map((item, index) => {
             return (
@@ -66,7 +65,7 @@ export default function ProjectPage() {
                   onClick={() => router.push(`/project/${item.url}`)}
                   className=" hover:brightness-90 hover:ease-in duration-200 hover:cursor-pointer"
                   src={item.imageUrl}
-                  alt="E-Sim Records"
+                  alt="Thumbnail Image"
                   quality={100}
                 />
                 <div>
@@ -89,12 +88,16 @@ export default function ProjectPage() {
                         Read more
                       </h1>
                     </div>
-                    <div
-                      onClick={() => {}}
-                      className=" flex flex-row hover:cursor-pointer"
-                    >
+                    <div className="flex flex-row hover:cursor-pointer">
                       <FaLink className="self-center" />
-                      <h1 className="pl-2">Visit Website</h1>
+                      <a
+                        href={item?.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="pl-2"
+                      >
+                        Visit Website
+                      </a>
                     </div>
                   </div>
                 </div>

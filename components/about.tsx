@@ -18,7 +18,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
+      {/* <p className="mb-3">
         After completing my <span className="font-medium">mechanical</span>{" "}
         degree, I found myself at a crossroads. While I had a formal education
         in mechanical engineering, I realized that my true passion lay in the
@@ -37,6 +37,12 @@ export default function About() {
         always looking to learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
+      </p> */}
+      <p>
+        I’m from Indonesia and I have been working as a Fullstack Developer for
+        over 1 years. Currently I work for Supala as front-end developer. I’ve
+        been freelancing since 2022, and right now I am looking forward to
+        collaborate with you!
       </p>
     </motion.section>
   );
