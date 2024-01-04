@@ -39,7 +39,7 @@ export default function About() {
         developer.
       </p> */}
       <p>
-        I’m from Indonesia and I have been working as a Fullstack Developer for
+        I’m from Indonesia and I have been working as a Frontend Developer for
         over 1 years. Currently I work for Supala as front-end developer. I’ve
         been freelancing since 2022, and right now I am looking forward to
         collaborate with you!

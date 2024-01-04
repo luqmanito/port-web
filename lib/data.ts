@@ -107,9 +107,9 @@ export const navMenu = [
     url: "/project",
   },
   {
-    name: "Blog",
-    hash: "#blog",
-    url: "/blog",
+    name: "Youtube",
+    hash: "#youtube",
+    url: "https://www.youtube.com/@outsmartcode",
   },
   {
     name: "Contact",
@@ -176,10 +176,10 @@ export const webList = [
       ssproducts,
       sspayment,
     ],
-    link: "https://ezpos.partograf-digital.com/order/ito-mart",
+    link: "https://ezpos.id/",
     css: "Vuetify",
     techstack:
-      "The site is still under development; it is built by Vue.js 3.3.4 with typescript and uses the Pinia state management pattern, Axios for handling API requests, and runs on the Vite library. In addition to frontend work, I also assist in building or designing the database schema and implementing it in backend work using the PHP framework Laravel and Eloquent ORM",
+      "The site is built by Vue.js 3.3.4 with typescript and uses the Pinia state management pattern, Axios for handling API requests, and runs on the Vite library. In addition to frontend work, I also assist in building or designing the database schema and implementing it in backend work using the PHP framework Laravel and Eloquent ORM",
     description:
       "EzPos is the web version of the EzPos mobile app, primarily used for online food ordering. Kitchen and cashier staff using the mobile app receive incoming order notifications. The kitchen staff can then begin preparing the food, and once the order is ready, the cashier is notified to confirm the order and complete the transaction with the customer. In addition to the food ordering feature, this web application offers settings for the super admin user to view a list of businesses registered and subscribed to some modules. The super admin can activate or deactivate certain paid modules based on the business owner's preferences. Some of these modules include limitations on products, category features, online ordering capabilities, and various payment methods.",
     brief: [
@@ -217,10 +217,10 @@ export const appList = [
       ssezpos7,
       ssezpos8,
     ],
-    link: "https://github.com/luqmanito/m-pos",
+    link: "https://play.google.com/store/apps/details?id=id.ezpos&hl=id&gl=US",
     css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
     techstack:
-      "This mobile app is built using Typescript and React Native with Firebase integration to send push notifications to employees. Redux Toolkit is utilized to handle global state management in this app. As for the user interface, I chose NativeBase to streamline the development process. I've made an effort to implement clean code architecture in this project, making the code much easier to read and scalable. You can check my repository to see it. This app is currently in development, and the current progress is in the internal testing phase on Google Console. If you would like to be part of our testing team, please contact me, and I'll send you the download link.",
+      "This mobile app is built using Typescript and React Native with Firebase integration to send push notifications to employees. Redux Toolkit is utilized to handle global state management in this app. As for the user interface, I chose NativeBase to streamline the development process. I've made an effort to implement clean code architecture in this project, making the code much easier to read and scalable. You can check my repository to see it.",
     description:
       "EzPos is a POS mobile app currently designed for Android, primarily used in tab view, but it can also run on the normal mobile Android view. Essentially, it's a food SAAS app where a business owner can register their business. After registration, they can proceed to create a list of their food products. The business owner has the ability to manage their employees by adding and editing their roles, such as kitchen staff, regular users, administrators, and cashiers. Each role comes with different feature authorities within the app.",
     brief: [
@@ -455,10 +455,10 @@ export const experiencesData = [
     date: "2022",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Frontend Developer",
     location: "Bandung, Indonesia",
     description:
-      "I'm now a full-stack developer working at Supala Web Company. My stack includes React, Next.js, Vue.js, TypeScript, Tailwind, Node and Laravel. I'm open to full-time opportunities.",
+      "I'm now a frontend developer working at Supala Web Company. My stack includes React, Next.js, Vue.js, TypeScript, Tailwind, Node and Laravel. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
