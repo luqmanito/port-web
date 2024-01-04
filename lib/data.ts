@@ -400,8 +400,7 @@ export const portfolioList = [
     images: [sssgp, ssmarlion],
     link: "https://holidaymap-sgp-googlemap.vercel.app/",
     css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
-    techstack:
-      "Tech Stack : Next.js, Redux, Googlemap Api",
+    techstack: "Tech Stack : Next.js, Redux, Googlemap Api",
     description:
       "I successfully integrated the Google Maps API for my top-rated tourist map in Singapore. It's a simple website where users can click on one of the places, and the map next to it will display the location marked with a red marker, along with a full description of the place.",
     brief: [
@@ -423,44 +422,44 @@ export const portfolioList = [
 
 export const experiencesData = [
   {
-    title: "Mechanical Diplome Graduate Degree",
-    location: "Bandung, Indonesia",
+    title: "Frontend Developer",
+    location: "Remote",
     description:
-      "I graduated after 3 years of studying. I immediately found a job as a Hardware Engineer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2015",
-  },
-  {
-    title: "Hardware Engineer",
-    location: "Jakarta, Indonesia",
-    description:
-      "I worked as a Hardware Engineer for 3 years and led the team responsible for supervising the installation of the Jabodetabek-West Java toll road equipment.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2017 - 2020",
-  },
-  {
-    title: "Mechanical Bachelor Graduate Degree",
-    location: "Bandung, Indonesia",
-    description:
-      "I graduated after 3 years of studying, while still doing job as a hardware engineer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "I'm now a frontend developer working at Supala Web Company. My stack includes React, Next.js, Vue.js, TypeScript, Tailwind, Node and Laravel. I'm open to full-time opportunities.",
+    icon: React.createElement(FaReact),
+    date: "2023 - present",
   },
   {
     title: "Fullstack Developer Bootcamp Program",
     location: "Bandung, Indonesia",
     description:
-      "I enroll a fullstack javascript program, and succesfully made 4 app site which is coffee shop, movie, e-wallet, furniture, and one mobile apps for coffee shop. ",
+      "I enroll a fullstack javascript program by Fazztrack, and just within 3 months i succesfully made 4 app site which is coffee shop, movie, e-wallet, furniture, and one mobile apps for coffee shop. ",
     icon: React.createElement(CgWorkAlt),
     date: "2022",
   },
   {
-    title: "Frontend Developer",
+    title: "Mechanical Bachelor Graduate Degree",
     location: "Bandung, Indonesia",
     description:
-      "I'm now a frontend developer working at Supala Web Company. My stack includes React, Next.js, Vue.js, TypeScript, Tailwind, Node and Laravel. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2023 - present",
+      "I graduated after 3 years of studying, while still doing job as a IT consultant supervisor.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019",
+  },
+  {
+    title: "IT Consultant Supervisor",
+    location: "Jakarta, Indonesia",
+    description:
+      "I worked as a consultant for 3 years and led the team responsible for supervising the installation of the Jabodetabek-West Java toll road equipment.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2017 - 2020",
+  },
+  {
+    title: "Mechanical Diplome Graduate Degree",
+    location: "Bandung, Indonesia",
+    description:
+      "I graduated after 3 years of studying. I immediately found a job as a IT Consultant.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2015",
   },
 ] as const;
 
