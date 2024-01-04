@@ -4,6 +4,7 @@ import { webList, appList, portfolioList, ItemProject } from "@/lib/data";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import { FaLink } from "react-icons/fa";
 
 export default function DetailProjectPage() {
   const params = useParams();
@@ -41,6 +42,17 @@ export default function DetailProjectPage() {
         <h1 className="flex text-xl md:text-3xl font-bold mt-4 md:mt-8  w-fit">
           Introduction
         </h1>
+        <div className="flex flex-row hover:cursor-pointer mt-4 text-cyan-400">
+          <FaLink className="self-center" />
+          <a
+            href={project?.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pl-2"
+          >
+            Visit Website
+          </a>
+        </div>
         <p className="text-base md:text-lg mt-4">{project?.description}</p>
         <p className="text-base md:text-lg mt-8">{project?.techstack}</p>
         <h1 className="flex text-xl md:text-3xl font-bold mt-8 md:mt-16  w-fit">

@@ -75,6 +75,7 @@ export default function Navbar() {
                 }
               )}
               href={item.url}
+              target={item.name === "Youtube" ? "_blank" : "_self"}
               onClick={() => {
                 setActiveTitleSection(item.name);
               }}
