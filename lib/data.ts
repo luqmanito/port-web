@@ -176,7 +176,7 @@ export const webList = [
       ssproducts,
       sspayment,
     ],
-    link: "https://ezpos.id/",
+    link: "https://ezpos.id/cms",
     css: "Vuetify",
     techstack:
       "The site is built by Vue.js 3.3.4 with typescript and uses the Pinia state management pattern, Axios for handling API requests, and runs on the Vite library. In addition to frontend work, I also assist in building or designing the database schema and implementing it in backend work using the PHP framework Laravel and Eloquent ORM",
