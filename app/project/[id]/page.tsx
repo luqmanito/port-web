@@ -56,7 +56,7 @@ export default function DetailProjectPage() {
         <p className="text-base md:text-lg mt-4">{project?.description}</p>
         <p className="text-base md:text-lg mt-8">{project?.techstack}</p>
         <h1 className="flex text-xl md:text-3xl font-bold mt-8 md:mt-16  w-fit">
-          Short Feature Explanation
+        Features at a glance
         </h1>
         {project?.images.slice(1).map((image, index) => (
           <React.Fragment key={index}>
