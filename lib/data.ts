@@ -1,6 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaWolfPackBattalion } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import ssjiep from "@/public/ssjip.jpg";
 import ssjiep10 from "@/public/ssjiep10.jpg";
@@ -30,30 +30,13 @@ import ssmainjiep from "@/public/ssmainjiep.png";
 import ssbaim from "@/public/ssbaim1.png";
 import sspos from "@/public/sspos.png";
 import ssposapp from "@/public/supala-pos.png";
-import sscoffee1 from "@/public/coffee-web.png";
-import sscoffee2 from "@/public/co1.jpg";
-import sscoffee3 from "@/public/col2.jpg";
 import ssmarlion from "@/public/ssmarlion.png";
-import sscoffee4 from "@/public/co3.jpg";
-import sscoffee5 from "@/public/col4.jpg";
-import ssfazz1 from "@/public/sasd.jpg";
-import ssfazz2 from "@/public/sasd2.jpg";
-import ssfazz3 from "@/public/sasd3.jpg";
-import ssfazz4 from "@/public/profilefazz.jpg";
-import spektrum from "@/public/spectrum.jpg";
-import spektrum1 from "@/public/spectrum2.jpg";
-import spektrum2 from "@/public/spectrum3.jpg";
-import spektrum3 from "@/public/spectrum4.jpg";
-import spektrum4 from "@/public/spectrum5.jpg";
-import mcoffee from "@/public/mobile-coffee.png";
-import mcoffee1 from "@/public/mobile-coffee2.png";
-import ssxazam from "@/public/xazam-web.png";
-import ssxazam2 from "@/public/movie2.jpg";
-import ssxazam3 from "@/public/movie3.jpg";
-import sscoffeeapp from "@/public/coffee-apps.png";
+import sdbv1 from "@/public/ss-sdbv1.jpg";
+import sdbv2 from "@/public/ss-sdbv2.jpg";
+import sdbv3 from "@/public/ss-sdbv3.jpg";
+import sdbv4 from "@/public/ss-sdbv4.jpg";
+import sdbv5 from "@/public/ss-sdbv5.jpg";
 import sssgp from "@/public/sgp-web.png";
-import ssspectrum from "@/public/spectrum-web.png";
-import ssfazzpay from "@/public/fazzpay-web.png";
 import baimkumis from "@/public/baimkumis.jpg";
 import ssposweb from "@/public/ssposweb.png";
 import { StaticImageData } from "next/image";
@@ -269,15 +252,15 @@ export const appList = [
 
 export const portfolioList = [
   {
-    name: "Coffee Shop",
-    imageUrl: sscoffee1,
+    name: "Sedekah Bersama",
+    imageUrl: sdbv1,
     url: "coffee-shop",
-    images: [sscoffee1, sscoffee2, sscoffee3, sscoffee4, sscoffee5],
-    link: "https://haya-coffee-frontend.vercel.app/",
-    css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
-    techstack: "Stack used : PostgreSQL, Express, React, Node",
+    images: [sdbv1, sdbv2, sdbv3, sdbv4, sdbv5],
+    link: "https://sedekahbersama.luqmanito.com/",
+    css: "shadcn ui, tailwind",
+    techstack: "Stack used : Shadcn UI, React, Tailwind",
     description:
-      "I developed a CRUD site for buying and selling coffee and food, with a useful feature for buyers and a separate interface for sellers. Users can register, create an account, and log in to browse and select items, add them to their cart, and checkout. In addition to the buying and selling features, the site also includes a user prowle and a product order history. On the admin side, the site allows the addition of new items, price editing, and promotional offers",
+      "As a Frontend Developer, I contributed to the creation of SedekahBersama, a charity foundation website. I focused on replicating the user-friendly layout and design aesthetics of the UNFPA site to provide an intuitive and engaging user experience. My responsibilities included developing responsive web pages, ensuring cross-browser compatibility, and optimizing performance. The tech stack utilized in this project included React, Next.js, TypeScript, and Tailwind CSS.",
     brief: [
       {
         // brief_1:
@@ -293,106 +276,7 @@ export const portfolioList = [
       },
     ],
   },
-  {
-    name: "Coffee Shop Mobile App",
-    imageUrl: sscoffeeapp,
-    url: "coffee-shop-app",
-    images: [sscoffeeapp, mcoffee, mcoffee1],
-    link: "https://github.com/luqmanito/HayaShop",
-    css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
-    techstack: "Stack used : PostgreSQL, Express, React Native, Node.js",
-    description:
-      "I developed an Android-based mobile application for buying and selling food and drinks. Users can register and log in with their email, and then browse and order products based on best-selling, cheapest, newest, or most expensive. In addition to the ordering feature, the app also includes an edit user prowle feature. On the admin side, there is a feature for adding and editing food and beverage products, including descriptions, prices, and images, which are then displayed to users as buyers.",
-    brief: [
-      {
-        // brief_1:
-        //   "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
-        // brief_2:
-        //   "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
-        // brief_3:
-        //   "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
-        // brief_4:
-        //   "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
-        // brief_5:
-        //   "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
-      },
-    ],
-  },
-  {
-    name: "FazzPay",
-    imageUrl: ssfazzpay,
-    url: "fazzpay",
-    images: [ssfazzpay, ssfazz1, ssfazz2, ssfazz3, ssfazz4],
-    link: "https://fazzpay-six.vercel.app/",
-    css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
-    techstack: "Stack used : PostgreSQL, Express, Next, Node",
-    description:
-      "I developed a CRUD site for e-wallets, integrating a payment gateway through Midtrans. Users can log in to access top-up and transfer features, along with viewing their transaction history. Besides these main features, the site also incorporates a user profile viewing and editing feature.",
-    brief: [
-      {
-        // brief_1:
-        //   "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
-        // brief_2:
-        //   "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
-        // brief_3:
-        //   "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
-        // brief_4:
-        //   "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
-        // brief_5:
-        //   "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
-      },
-    ],
-  },
-  {
-    name: "Spectrum Furniture",
-    imageUrl: ssspectrum,
-    url: "spectrum",
-    images: [ssspectrum, spektrum, spektrum1, spektrum2, spektrum3, spektrum4],
-    link: "https://spectrum-online.vercel.app/",
-    css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
-    techstack: "Stack used : PostgreSQL, Express, React, Node.js",
-    description:
-      "I was a Backend Developer on a team that developed a CRUD site for buying furniture. The main features of the site include viewing a list of items displayed on the product menu, with the ability to sort items by category, price, color, and brand. In addition to the main features, the site also includes user prowles and admin features for adding, deleting, and editing products for sale",
-    brief: [
-      {
-        // brief_1:
-        //   "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
-        // brief_2:
-        //   "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
-        // brief_3:
-        //   "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
-        // brief_4:
-        //   "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
-        // brief_5:
-        //   "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
-      },
-    ],
-  },
-  {
-    name: "Xazam Movie",
-    imageUrl: ssxazam,
-    url: "xazam",
-    images: [ssxazam, ssxazam2, ssxazam3],
-    link: "https://xazamtickitz.vercel.app",
-    css: "Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template",
-    techstack: "Stack used : PostgreSQL, Express, Next, Node.js",
-    description:
-      "I worked as a Frontend Developer on a team that developed a CRUD site for ordering cinema tickets. The main features of the site include viewing current and upcoming movies, selecting movies and cinema seats, and making payments. Once the payment is completed, users can print their cinema tickets. In addition to these main features, the site includes an admin feature for adding new movies, updating the screening schedule, and specifying the city for each screening location.",
-    brief: [
-      {
-        // brief_1:
-        //   "on the dashboard page it show overall status of all users item that stored on the warehouse, theres also some request incoming notification that tells theres a shuttle request for an item that need user confirmation",
-        // brief_2:
-        //   "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
-        // brief_3:
-        //   "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
-        // brief_4:
-        //   "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
-        // brief_5:
-        //   "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
-      },
-    ],
-  },
+
   {
     name: "Singapore Holiday Guide",
     imageUrl: sssgp,
@@ -422,12 +306,20 @@ export const portfolioList = [
 
 export const experiencesData = [
   {
+    title: "Backend Developer",
+    location: "Bandung, Indonesia",
+    description:
+      "I'm now a backend developer working at Ganesha Operation. My stack includes Node.js, Nest.js, TypeScript, and Go. I'm open to full-time opportunities.",
+    icon: React.createElement(FaWolfPackBattalion),
+    date: "2024 - present",
+  },
+  {
     title: "Frontend Developer",
     location: "Remote",
     description:
-      "I'm now a frontend developer working at Supala Web Company. My stack includes React, Next.js, Vue.js, TypeScript, Tailwind, Node and Laravel. I'm open to full-time opportunities.",
+      "As a Frontend Developer at Supala and Millenia Solusi Informatika, I specialize in building dynamic and responsive web applications. My tech stack includes React, Next.js, Vue.js, TypeScript, Tailwind, Node.js, and Laravel.",
     icon: React.createElement(FaReact),
-    date: "2023 - present",
+    date: "2023 - 2024",
   },
   {
     title: "Fullstack Developer Bootcamp Program",
@@ -441,7 +333,7 @@ export const experiencesData = [
     title: "Mechanical Bachelor Graduate Degree",
     location: "Bandung, Indonesia",
     description:
-      "I graduated after 3 years of studying, while still doing job as a IT consultant supervisor.",
+      "I graduated after 3 years of studying, while still doing job as an IT consultant supervisor.",
     icon: React.createElement(LuGraduationCap),
     date: "2019",
   },
@@ -505,6 +397,10 @@ export const skillsData = [
   "TypeScript",
   "React.js",
   "Express",
+  "Nest",
+  "Websocket",
+  "GRPC",
+  "AWS",
   "React Native",
   "Next.js",
   "Vue.js",
@@ -517,6 +413,7 @@ export const skillsData = [
   "Express",
   "PostgreSQL",
   "Php",
+  "Go",
   "Laravel",
   "Eloquent",
   "Framer Motion",
