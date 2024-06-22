@@ -23,12 +23,13 @@ jobs:
       - name: Deploy to Server
         run: |
           ssh -i ~/.ssh/aws_pem_file ubuntu@ec2-13-212-183-103.ap-southeast-1.compute.amazonaws.com << 'EOF'
-            export PATH=$PATH:/usr/local/bin
+            . ~/.profile
+            . ~/.bashrc
             cd /var/www/html/nextjs/port-web/
-            /usr/local/bin/pm2 stop 0
+            pm2 stop 0
             git pull origin main
             npm install
             npm run build
-            /usr/local/bin/pm2 reload 0
+            pm2 reload 0
           EOF
 
