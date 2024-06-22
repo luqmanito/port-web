@@ -16,18 +16,20 @@ jobs:
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.AWS_PEM_FILE }}" > ~/.ssh/aws_pem_file
+          echo "${{ secrets.AWS_PEM_FILE }}" | base64 --decode > ~/.ssh/aws_pem_file
           chmod 600 ~/.ssh/aws_pem_file
           ssh-keyscan -H ec2-13-212-183-103.ap-southeast-1.compute.amazonaws.com >> ~/.ssh/known_hosts
 
       - name: Deploy to Server
         run: |
           ssh -i ~/.ssh/aws_pem_file ubuntu@ec2-13-212-183-103.ap-southeast-1.compute.amazonaws.com << 'EOF'
+            export PATH=$PATH:/usr/local/bin
             cd /var/www/html/nextjs/port-web/
-            pm2 stop 0
+            /usr/local/bin/pm2 stop 0
             git pull origin main
             npm install
             npm run build
-            pm2 reload 0
+            /usr/local/bin/pm2 reload 0
           EOF
-
+        env:
+          AWS_PEM_FILE: ${{ secrets.AWS_PEM_FILE }}
