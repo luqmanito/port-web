@@ -1,0 +1,33 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main  # Triggers the workflow on push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.AWS_PEM_FILE }}" > ~/.ssh/aws_pem_file
+          chmod 600 ~/.ssh/aws_pem_file
+          ssh-keyscan -H ec2-13-212-183-103.ap-southeast-1.compute.amazonaws.com >> ~/.ssh/known_hosts
+
+      - name: Deploy to Server
+        run: |
+          ssh -i ~/.ssh/aws_pem_file ubuntu@ec2-13-212-183-103.ap-southeast-1.compute.amazonaws.com << 'EOF'
+            cd /var/www/html/nextjs/port-web/
+            pm2 stop 0
+            git pull origin main
+            npm install
+            npm run build
+            pm2 reload 0
+          EOF
+
