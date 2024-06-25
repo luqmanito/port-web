@@ -397,6 +397,7 @@ export const skillsData = [
   "TypeScript",
   "React.js",
   "Express",
+  "Microservices",
   "Nest",
   "Websocket",
   "GRPC",
