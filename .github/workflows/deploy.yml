@@ -12,15 +12,19 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Node Js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '18'
 
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.AWS_PEM_FILE }}" | base64 --decode > ~/.ssh/aws_pem_file
+          echo "${{ secrets.AWS_PEM_FILE }}" > ~/.ssh/aws_pem_file
           chmod 600 ~/.ssh/aws_pem_file
           ssh-keyscan -H ec2-13-212-183-103.ap-southeast-1.compute.amazonaws.com >> ~/.ssh/known_hosts
 
-      - name: Deploy to Server
+       - name: Deploy to Server
         run: |
           ssh -i ~/.ssh/aws_pem_file ubuntu@ec2-13-212-183-103.ap-southeast-1.compute.amazonaws.com << 'EOF'
             # Source profile files to set up environment variables
@@ -41,5 +45,4 @@ jobs:
             /run/user/1000/fnm_multishells/922886_1719298313686/bin/npm run build
             /run/user/1000/fnm_multishells/922886_1719298313686/bin/pm2 reload 0
           EOF
-        env:
-          AWS_PEM_FILE: ${{ secrets.AWS_PEM_FILE }}
+
