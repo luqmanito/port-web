@@ -261,20 +261,7 @@ export const portfolioList = [
     techstack: "Stack used : Shadcn UI, React, Tailwind",
     description:
       "As a Frontend Developer, I contributed to the creation of SedekahBersama, a charity foundation website. I focused on replicating the user-friendly layout and design aesthetics of the UNFPA site to provide an intuitive and engaging user experience. My responsibilities included developing responsive web pages, ensuring cross-browser compatibility, and optimizing performance. The tech stack utilized in this project included React, Next.js, TypeScript, and Tailwind CSS.",
-    brief: [
-      {
-        // brief_1:
-        //   "Dashboard Page",
-        // brief_2:
-        //   "in this ruangan feature, it contains how many box capacity in a spesific warehouse, theres status of which is available for storing and which one is already taken.",
-        // brief_3:
-        //   "this hak akses page it has a setting for specific role to manage what authority he can do in the web, you can simply by check a tick mark on the right to change it.",
-        // brief_4:
-        //   "this is one of the complex one feature in this web, it contain many step when a user want to store his item in the client warehouse, this is where the state management became so helpful. ",
-        // brief_5:
-        //   "and last pic is feature of status availability of box in a warehouse, some of another feature that require complex logic and need state management when make it.",
-      },
-    ],
+    brief: [{}],
   },
 
   {
@@ -314,10 +301,10 @@ export const experiencesData = [
     date: "2024 - present",
   },
   {
-    title: "Frontend Developer",
+    title: "Fullstack Developer",
     location: "Remote",
     description:
-      "As a Frontend Developer at Supala and Millenia Solusi Informatika, I specialize in building dynamic and responsive web applications. My tech stack includes React, Next.js, Vue.js, TypeScript, Tailwind, Node.js, and Laravel.",
+      "As a Fullstack Developer at Supala and Millenia Solusi Informatika, I specialize in building dynamic and responsive web applications. My tech stack includes React, Next.js, Vue.js, TypeScript, Tailwind, Node.js, and Laravel.",
     icon: React.createElement(FaReact),
     date: "2023 - 2024",
   },
@@ -395,6 +382,8 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
+  "Go",
+  "Php",
   "React.js",
   "Express",
   "Microservices",
@@ -413,8 +402,6 @@ export const skillsData = [
   "Vuex",
   "Express",
   "PostgreSQL",
-  "Php",
-  "Go",
   "Laravel",
   "Eloquent",
   "Framer Motion",
