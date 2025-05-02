@@ -1,9 +1,9 @@
-name: Deploy
+name: Deploy with Docker Compose
 
 on:
   push:
     branches:
-      - main  # Triggers the workflow on push to the main branch
+      - main
 
 jobs:
   deploy:
@@ -12,10 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Node Js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '18'
 
       - name: Set up SSH
         run: |
@@ -24,25 +20,15 @@ jobs:
           chmod 600 ~/.ssh/aws_pem_file
           ssh-keyscan -H ec2-13-212-183-103.ap-southeast-1.compute.amazonaws.com >> ~/.ssh/known_hosts
 
-      - name: Deploy to Server
+      - name: Deploy with Docker Compose
         run: |
           ssh -i ~/.ssh/aws_pem_file ubuntu@ec2-13-212-183-103.ap-southeast-1.compute.amazonaws.com << 'EOF'
-            # Source profile files to set up environment variables
-            . ~/.profile
-            . ~/.bashrc
+            cd /var/www/html/nextjs/port-web
 
-            # Initialize fnm
-            export PATH=$HOME/.fnm:$PATH
-            eval "$(fnm env)"
-
-            # Ensure PATH includes the directory for npm and pm2
-            export PATH=$PATH:/run/user/1000/fnm_multishells/922886_1719298313686/bin
-
-            cd /var/www/html/nextjs/port-web/
-            /run/user/1000/fnm_multishells/922886_1719298313686/bin/pm2 stop 0 || true
+            # Pull latest changes
             git pull origin main
-            /run/user/1000/fnm_multishells/922886_1719298313686/bin/npm install
-            /run/user/1000/fnm_multishells/922886_1719298313686/bin/npm run build
-            /run/user/1000/fnm_multishells/922886_1719298313686/bin/pm2 reload 0
-          EOF
 
+            # Stop and rebuild with Docker Compose
+            docker compose down
+            docker compose up -d --build
+          EOF
