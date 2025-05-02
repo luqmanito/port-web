@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up SSH
+      - name: Set up SSH OY
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.AWS_PEM_FILE }}" > ~/.ssh/aws_pem_file
