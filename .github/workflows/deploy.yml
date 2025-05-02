@@ -18,11 +18,11 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.AWS_PEM_FILE }}" > ~/.ssh/aws_pem_file
           chmod 600 ~/.ssh/aws_pem_file
-          ssh-keyscan -H ec2-18.142.120.147.ap-southeast-1.compute.amazonaws.com >> ~/.ssh/known_hosts
+          ssh-keyscan -H ec2-18-142-120-147.ap-southeast-1.compute.amazonaws.com >> ~/.ssh/known_hosts
 
       - name: Deploy with Docker Compose
         run: |
-          ssh -i ~/.ssh/aws_pem_file ubuntu@ec2-18.142.120.147.ap-southeast-1.compute.amazonaws.com << 'EOF'
+          ssh -i ~/.ssh/aws_pem_file ubuntu@ec2-18-142-120-147.ap-southeast-1.compute.amazonaws.com << 'EOF'
             cd /var/www/html/nextjs/port-web
 
             # Pull latest changes
