@@ -20,7 +20,7 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p>
         I’m from Indonesia and I have been working as a software engineer for
-        over 2 years. Currently I work for Ganesha Operation as backend
+        over 4 years. Currently I work for Ganesha Operation as backend
         developer. I’ve been freelancing since 2022, and right now I am looking
         forward to collaborate with you!
       </p>
